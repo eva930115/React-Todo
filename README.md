@@ -1,5 +1,5 @@
 # React 待辦事項清單
-#### 2025/11/21
+#### 2025/11/21  [參考教學](https://www.youtube.com/watch?v=aBTiZfShe-4)
 
 
 一個以 React + Vite 建立的簡約待辦清單，具備新增、刪除與完成狀態切換等基本功能，介面採卡片式設計並透過 `react-icons` 提供編輯/刪除圖示。
