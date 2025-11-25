@@ -5,12 +5,12 @@ function Todo({ todo , deletTodo, taggleCompelted, taggleEditing, editTodo}) {
   return (
     todo.isEditing ? <EditTodo todo={todo} editTodo={editTodo} /> :
     <div className={`todo ${todo.isCompleted ? 'completed' : ''}`}>
-      <p onClick={() => {taggleCompelted(todo.id)}}>{todo.content}</p>
+      <p onClick={() => {taggleCompelted(todo._id)}}>{todo.content}</p>
       <div>
         <MdEdit style={{cursor: "pointer"}}
-        onClick={() => {taggleEditing(todo.id)}}/>
+        onClick={() => {taggleEditing(todo._id)}}/>
         <MdDelete style={{cursor: "pointer", marginLeft:'10px'}} 
-        onClick={() => {deletTodo(todo.id)}}/>
+        onClick={() => {deletTodo(todo._id)}}/>
       </div>
     </div>
   );

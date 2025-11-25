@@ -4,7 +4,7 @@ function EditTodo ({todo, editTodo}) {
     const [content, setContent] = useState(todo.content);
     const handleSubmit = (e) => {
         e.preventDefault()
-        editTodo(todo.id, content)
+        editTodo(todo._id, content)
     }
     return (
         <form className="create-form" onSubmit={handleSubmit}>
